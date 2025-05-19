@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechLearn - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="scss/styles.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Add custom theme configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-primary-50">
+     <!-- Header -->
+     <nav class="bg-gradient-to-r from-primary-600 to-primary-700 text-white p-4 shadow-lg fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold flex items-center space-x-3">
+                <div class="rounded-lg">
+                    <img src="img/Crop Ami.co.png" alt="TechLearn Logo" class="w-12 h-12">
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-2xl font-bold leading-none">TechLearn</span>
+                    <span class="text-xs text-primary-200">Your Tech Resource Hub</span>
+                </div>
+            </a>
+            <div class="space-x-6">
+<a href="index.html" class="hover:text-blue-200 transition-colors">Home</a>
+                <a href="learn.html" class="hover:text-blue-200 transition-colors">Learn Coding</a>
+                <a href="roadmaps.html" class="hover:text-blue-200 transition-colors">Roadmaps</a>
+                <a href="blog.html" class="hover:text-blue-200 transition-colors">Blog</a>
+                <a href="tool.html" class="hover:text-blue-200 transition-colors">Tools</a>
+                <a href="about.html" class="hover:text-blue-200 transition-colors">About</a>
+                <a href="contact.html" class="hover:text-blue-200 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Spacer for fixed navbar -->
+    <div class="h-16"></div>
+
+    <!-- Hero Section with Particles -->
+    <header class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-600 to-primary-800 text-white overflow-hidden pt-16">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+            <!-- Animated circles -->
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-primary-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+            <div class="absolute top-1/3 right-1/4 w-64 h-64 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+            <div class="absolute bottom-1/4 left-1/3 w-64 h-64 bg-primary-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-left" data-aos="fade-right">
+                    <div class="mb-8">
+                        <!-- <img src="img/Crop Ami.co.png" alt="TechLearn Logo" class="w-40 h-40"> -->
+                    </div>
+                    <h1 class="text-6xl font-bold mb-6 leading-tight">
+                        Empowering Future
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-primary-200">
+                            Tech Professionals
+                        </span>
+                    </h1>
+                    <p class="text-xl mb-8 text-primary-100 max-w-xl">
+                        Explore resources, tools, and guides to excel in engineering & tech fields.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="learn.html" class="bg-white text-primary-600 px-8 py-3 rounded-full font-semibold hover:bg-primary-50 transition-all transform hover:scale-105 shadow-lg">
+                            Start Learning
+                        </a>
+                        <a href="#explore" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary-600 transition-all">
+                            Explore More
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:block" data-aos="fade-left">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary-500 to-blue-500 rounded-full filter blur-2xl opacity-30"></div>
+                        <img src="img/Crop Ami.co.png" alt="Tech Illustration" class="relative z-10 w-full max-w-lg mx-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="py-20 bg-gradient-to-b from-white to-primary-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-primary-800 mb-6">Welcome to Your Tech Resource Hub</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-12">
+                    Tech Resource Hub is your ultimate destination for aspiring engineers and tech enthusiasts. Whether you're learning to code, exploring career roadmaps, or staying updated with the latest tech trends, we've got you covered. Access top resources, interactive tools, and a vibrant community to accelerate your learning journey. Start building your future in tech today!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Core Features Section -->
+    <section class="py-20 bg-gradient-to-b from-white to-primary-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-primary-800 mb-12 text-center" id="explore" data-aos="fade-up">Our Services</h2>
+            
+            <!-- Career Roadmaps -->
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-right">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-gradient-to-r from-blue-500 to-primary-500 w-14 h-14 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary-800">Career Roadmaps</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <p class="text-gray-600">Structured learning paths for:</p>
+                        <ul class="grid grid-cols-2 gap-2 text-gray-600">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>Web Development</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>Mobile Development</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>Blockchain</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>Cybersecurity</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>Electronics & IoT</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>AI/ML</li>
+                        </ul>
+                        <a href="roadmaps.html" class="inline-block mt-4 text-primary-600 hover:text-primary-700 font-semibold">Explore Roadmaps →</a>
+                    </div>
+                </div>
+
+                <!-- Learning Resources -->
+                <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-left">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-gradient-to-r from-green-500 to-primary-500 w-14 h-14 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary-800">Learning Resources</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <p class="text-gray-600">Comprehensive learning materials:</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>Data Structures & Algorithms</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>IDE Setup & Best Practices</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>Practice Platforms & Tutorials</li>
+                        </ul>
+                        <a href="learn.html" class="inline-block mt-4 text-primary-600 hover:text-primary-700 font-semibold">Start learning </a> <B>&</B>
+                        <a href="Resources.html" class="inline-block mt-4 text-primary-600 hover:text-primary-700 font-semibold"> Resources </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Features -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- AI Tools Directory -->
+                <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up">
+                    <div class="bg-gradient-to-r from-purple-500 to-primary-500 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-800 mb-3">Tools Directory</h3>
+                    <p class="text-gray-600 mb-4">Curated collection of development tools, design assistants, and productivity boosters.</p>
+                    <a href="tool.html" class="text-primary-600 hover:text-primary-700 font-semibold">Explore Tools →</a>
+                </div>
+
+                <!-- Tech Blog -->
+                <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-gradient-to-r from-yellow-500 to-primary-500 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2.5 2.5 0 00-2.5-2.5H15"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-800 mb-3">Tech Blog</h3>
+                    <p class="text-gray-600 mb-4">Latest industry news, career tips, and technical insights from professionals.</p>
+                    <a href="blog.html" class="text-primary-600 hover:text-primary-700 font-semibold">Read Articles →</a>
+                </div>
+
+                <!-- Video Learning Hub -->
+                <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-gradient-to-r from-red-500 to-primary-500 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-800 mb-3">Video Learning</h3>
+                    <p class="text-gray-600 mb-4">Curated video tutorials, project builds, and tech conference highlights.</p>
+                    <a href="learn.html#videos" class="text-primary-600 hover:text-primary-700 font-semibold">Watch Now →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section class="py-20 bg-primary-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-primary-800 mb-12 text-center" data-aos="fade-up">Popular Learning Paths</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <!-- Software Development Track -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300" data-aos="fade-up">
+                    <div class="h-32 bg-gradient-to-r from-blue-500 to-primary-500 rounded-t-lg flex items-center justify-center">
+                        <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-primary-800 mb-2">Software Development</h3>
+                        <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <li>• Full Stack Development</li>
+                            <li>• Mobile Apps</li>
+                            <li>• Cloud & DevOps</li>
+                        </ul>
+                        <a href="learn.html#software-dev" class="text-primary-600 text-sm font-semibold hover:text-primary-700">Start Learning →</a>
+                    </div>
+                </div>
+
+                <!-- AI & ML Track -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300" data-aos="fade-up">
+                    <div class="h-32 bg-gradient-to-r from-purple-500 to-primary-500 rounded-t-lg flex items-center justify-center">
+                        <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-primary-800 mb-2">AI & ML</h3>
+                        <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <li>• Deep Learning</li>
+                            <li>• NLP & Computer Vision</li>
+                            <li>• AI Tools & APIs</li>
+                        </ul>
+                        <a href="learn.html#ai-ml" class="text-primary-600 text-sm font-semibold hover:text-primary-700">Start Learning →</a>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity Track -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300" data-aos="fade-up">
+                    <div class="h-32 bg-gradient-to-r from-red-500 to-primary-500 rounded-t-lg flex items-center justify-center">
+                        <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-primary-800 mb-2">Cybersecurity</h3>
+                        <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <li>• Ethical Hacking</li>
+                            <li>• Network Security</li>
+                            <li>• Security Tools</li>
+                        </ul>
+                        <a href="learn.html#cybersecurity" class="text-primary-600 text-sm font-semibold hover:text-primary-700">Start Learning →</a>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps Track -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300" data-aos="fade-up">
+                    <div class="h-32 bg-gradient-to-r from-green-500 to-primary-500 rounded-t-lg flex items-center justify-center">
+                        <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-primary-800 mb-2">Cloud & DevOps</h3>
+                        <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                            <li>• AWS, Azure, GCP</li>
+                            <li>• Docker & Kubernetes</li>
+                            <li>• CI/CD Pipeline</li>
+                        </ul>
+                        <a href="learn.html#cloud-devops" class="text-primary-600 text-sm font-semibold hover:text-primary-700">Start Learning →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-primary-800 mb-12 text-center" data-aos="fade-up">Meet the Developers</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-primary-50 to-blue-50 p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="0">
+                    <div class="flex items-center mb-6">
+                        <img src="img/ved profile pic.jpg" alt="Developer" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <div class="font-bold text-primary-800">Ved Khairnar</div>
+                            <div class="text-sm text-gray-600">Developer | Tech Enthusiast</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"(B.Tech 2nd Year Student) A passionate developer and tech influencer, dedicated to simplifying tech education and creating structured learning roadmaps for aspiring developers. With a creative mindset, a love for coding, and a mission to make learning accessible and engaging. As the driving force behind this platform, ensuring it is user-friendly and packed with valuable resources for tech enthusiasts."</p>
+                </div>
+                <div class="bg-gradient-to-br from-primary-50 to-blue-50 p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-6">
+                        <img src="https://i.pravatar.cc/60?img=5" alt="Developer" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <div class="font-bold text-primary-800">Sarah Johnson</div>
+                            <div class="text-sm text-gray-600">Frontend Lead at Spotify</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"The React and modern JavaScript courses were game-changers. TechLearn's project-based approach helped me build a strong portfolio that got me noticed by Spotify."</p>
+                </div>
+                <div class="bg-gradient-to-br from-primary-50 to-blue-50 p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-6">
+                        <img src="https://i.pravatar.cc/60?img=12" alt="Developer" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <div class="font-bold text-primary-800">Michael Patel</div>
+                            <div class="text-sm text-gray-600">DevOps Engineer at Meta</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"TechLearn's DevOps curriculum is outstanding. From CI/CD to Kubernetes, the courses prepared me for real-world challenges I face at Meta. Highly recommended!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-primary-600 to-primary-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8" data-aos="fade-up">Ready to Start Your Tech Journey?</h2>
+            <p class="text-xl mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Join our community of learners and build your future in technology. Get started today with our comprehensive learning paths.
+            </p>
+            <div class="flex justify-center space-x-4" data-aos="fade-up" data-aos-delay="200">
+                <a href="learn.html" class="bg-white text-primary-600 px-8 py-3 rounded-full font-semibold hover:bg-primary-50 transition-all transform hover:scale-105 shadow-lg">
+                    Start Learning
+                </a>
+                <a href="contact.html" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary-600 transition-all">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-8 py-4">
+        <div class="container mx-auto text-center">
+            &copy; 2024 TechLearn. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
+    <script src="/js/script.js"></script>
+
+    <style>
+        @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animate-blob {
+            animation: blob 7s infinite;
+        }
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+        .animation-delay-4000 {
+            animation-delay: 4s;
+        }
+    </style>
+</body>
+</html> 

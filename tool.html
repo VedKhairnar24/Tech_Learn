@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools & IDEs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Include FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #f9fafb; /* Light gray background */
+    }
+    .header {
+      background-color: #0284c7; /* Blue header */
+      color: white;
+    }
+    .footer {
+      background-color: #0284c7; /* Blue footer */
+      color: white;
+    }
+    .from-primary-600 {
+      --tw-gradient-from: #0284c7 var(--tw-gradient-from-position);
+      --tw-gradient-to: rgb(2 132 199 / 0) var(--tw-gradient-to-position);
+      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    }
+    .to-primary-700 {
+      --tw-gradient-to: #0369a1 var(--tw-gradient-to-position);
+    }
+    .bg-gradient-to-r {
+      background-image: linear-gradient(to right, var(--tw-gradient-stops));
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-primary-50">
+
+ <!-- Header -->
+ <nav class="bg-gradient-to-r from-primary-600 to-primary-700 text-white p-4 shadow-lg fixed w-full z-50">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="index.html" class="text-3xl font-bold flex items-center space-x-3">
+            <div class="rounded-lg">
+                <img src="img/Crop Ami.co.png" alt="TechLearn Logo" class="w-12 h-12">
+            </div>
+            <div class="flex flex-col">
+                <span class="text-3xl font-bold leading-none">TechLearn</span>
+                <span class="text-sm text-primary-200">Your Tech Resource Hub</span>
+            </div>
+        </a>
+        <div class="space-x-8">
+          <a href="index.html" class="hover:text-blue-200 transition-colors">Home</a>
+          <a href="learn.html" class="hover:text-blue-200 transition-colors">Learn Coding</a>
+          <a href="roadmaps.html" class="hover:text-blue-200 transition-colors">Roadmaps</a>
+          <a href="blog.html" class="hover:text-blue-200 transition-colors">Blog</a>
+          <a href="tool.html" class="hover:text-blue-200 transition-colors">Tools</a>
+          <a href="about.html" class="hover:text-blue-200 transition-colors">About</a>
+          <a href="contact.html" class="hover:text-blue-200 transition-colors">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Spacer for Navigation Bar -->
+<div class="pt-16"></div>
+
+<div class="container mx-auto p-8">
+  <!-- Page Header -->
+  <div class="header p-8 text-white bg-gradient-blue rounded-lg mb-8">
+    <h1 class="text-5xl font-bold text-center">Tools & IDEs</h1>
+    <p class="text-lg text-center text-gray-200 mt-4">Explore a variety of tools and IDEs to enhance your development experience.</p>
+
+      <!-- IDE Setup Button -->
+    </div>
+    <div class="text-center mb-8">
+      <a href="IDE Setup.html" class="inline-block px-4 py-2 header ">IDE Setup</a>
+  </div>
+
+  <!-- AI Tools Section -->
+ 
+  <!-- Tools Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- General-Purpose IDEs -->
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="general">
+      <img src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png" alt="Visual Studio Code" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">Visual Studio Code (VS Code)</h2>
+      <p class="text-gray-600 mb-4">Lightweight, customizable, and beginner-friendly.</p>
+      <a href="https://code.visualstudio.com/" class="inline-block px-4 py-2 header ">Download</a>
+    </div>
+
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="general">
+      <img src="https://img.icons8.com/color/48/000000/intellij-idea.png" alt="IntelliJ IDEA" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">JetBrains IntelliJ IDEA (Community Edition)</h2>
+      <p class="text-gray-600 mb-4">Java development with advanced refactoring tools.</p>
+      <a href="https://www.jetbrains.com/idea/" class="inline-block px-4 py-2 header ">Download</a>
+    </div>
+
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="general">
+      <img src="https://img.icons8.com/color/48/000000/eclipse.png" alt="Eclipse" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">Eclipse</h2>
+      <p class="text-gray-600 mb-4">Open-source and extensible IDE.</p>
+      <a href="https://www.eclipse.org/downloads/" class="inline-block px-4 py-2 header ">Download</a>
+    </div>
+
+    <!-- Python IDEs -->
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="python">
+      <img src="https://img.icons8.com/color/48/000000/python.png" alt="PyCharm" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">PyCharm</h2>
+      <p class="text-gray-600 mb-4">Professional Python development (Django, Flask, data science).</p>
+      <a href="https://www.jetbrains.com/pycharm/" class="inline-block px-4 py-2 header ">Download</a>
+    </div>
+
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="python">
+      <img src="https://img.icons8.com/color/48/000000/spyder.png" alt="Spyder" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">Spyder</h2>
+      <p class="text-gray-600 mb-4">Data science and scientific computing.</p>
+      <a href="https://www.spyder-ide.org/" class="inline-block px-4 py-2 header ">Download</a>
+    </div>
+
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="python">
+      <img src="https://img.icons8.com/color/48/000000/jupyter.png" alt="Jupyter Notebook" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">Jupyter Notebook</h2>
+      <p class="text-gray-600 mb-4">Interactive coding and data visualization.</p>
+      <a href="https://jupyter.org/" class="inline-block px-4 py-2 header ">Download</a>
+    </div>
+
+    <!-- Web Development IDEs -->
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="web">
+      <img src="https://img.icons8.com/color/48/000000/webstorm.png" alt="WebStorm" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">WebStorm</h2>
+      <p class="text-gray-600 mb-4">Professional IDE for JavaScript, HTML, and CSS.</p>
+      <a href="https://www.jetbrains.com/webstorm/" class="inline-block px-4 py-2 header ">Download</a>
+    </div>
+
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="web">
+      <img src="https://img.icons8.com/color/48/000000/brackets.png" alt="Brackets" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">Brackets</h2>
+      <p class="text-gray-600 mb-4">A modern open-source text editor that understands web design.</p>
+      <a href="http://brackets.io/" class="inline-block px-4 py-2 header ">Download</a>
+    </div>
+
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="web">
+      <img src="https://img.icons8.com/color/48/000000/atom.png" alt="Atom" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">Atom</h2>
+      <p class="text-gray-600 mb-4">A hackable text editor for the 21st century.</p>
+      <a href="https://atom.io/" class="inline-block px-4 py-2 header ">Download</a>
+    </div>
+
+    <!-- Mobile Development IDEs -->
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="mobile">
+      <img src="https://img.icons8.com/color/48/000000/android-studio.png" alt="Android Studio" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">Android Studio</h2>
+      <p class="text-gray-600 mb-4">IDE for Android app development.</p>
+      <a href="https://developer.android.com/studio" class="inline-block px-4 py-2 header ">Download</a>
+    </div>
+
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="mobile">
+      <img src="https://img.icons8.com/color/48/000000/xcode.png" alt="Xcode" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">Xcode</h2>
+      <p class="text-gray-600 mb-4">IDE for iOS and macOS app development.</p>
+      <a href="https://developer.apple.com/xcode/" class="inline-block px-4 py-2 header ">Download</a>
+    </div>
+
+    <!-- Game Development IDEs -->
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="game">
+      <img src="https://img.icons8.com/color/48/000000/unity.png" alt="Unity" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">Unity</h2>
+      <p class="text-gray-600 mb-4">A cross-platform game engine for creating 2D and 3D games.</p>
+      <a href="https://unity.com/" class="inline-block px-4 py-2 header ">Download</a>
+    </div>
+
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="game">
+      <img src="https://img.icons8.com/color/48/000000/unreal-engine.png" alt="Unreal Engine" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">Unreal Engine</h2>
+      <p class="text-gray-600 mb-4">A powerful game engine for creating high-quality games.</p>
+      <a href="https://www.unrealengine.com/" class="inline-block px-4 py-2 header ">Download</a>
+    </div>
+
+    <!-- C/C++ IDEs -->
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="cpp">
+      <img src="https://img.icons8.com/color/48/000000/code-blocks.png" alt="Code::Blocks" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">Code::Blocks</h2>
+      <p class="text-gray-600 mb-4">A free C/C++ IDE built to meet the most demanding needs of its users.</p>
+      <a href="http://codeblocks.org/" class="inline-block px-4 py-2 header ">Download</a>
+    </div>
+
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="cpp">
+      <img src="https://img.icons8.com/color/48/000000/dev-c++.png" alt="Dev-C++" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">Dev-C++</h2>
+      <p class="text-gray-600 mb-4">A free, full-featured IDE for C/C++ programming.</p>
+      <a href="https://bloodshed.net/devcpp.html" class="inline-block px-4 py-2 header ">Download</a>
+    </div>
+
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="cpp">
+      <img src="https://img.icons8.com/color/48/000000/clion.png" alt="CLion" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">CLion</h2>
+      <p class="text-gray-600 mb-4">A powerful IDE for C and C++ development.</p>
+      <a href="https://www.jetbrains.com/clion/" class="inline-block px-4 py-2 header ">Download</a>
+    </div>
+
+    <!-- Data Science & Machine Learning IDEs -->
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="data">
+      <img src="https://img.icons8.com/color/48/000000/rstudio.png" alt="RStudio" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">RStudio</h2>
+      <p class="text-gray-600 mb-4">An integrated development environment for R.</p>
+      <a href="https://www.rstudio.com/" class="inline-block px-4 py-2 header ">Download</a>
+    </div>
+
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="data">
+      <img src="https://img.icons8.com/color/48/000000/anaconda.png" alt="Anaconda Navigator" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">Anaconda Navigator</h2>
+      <p class="text-gray-600 mb-4">A desktop graphical user interface for managing Anaconda packages.</p>
+      <a href="https://www.anaconda.com/products/individual" class="inline-block px-4 py-2 header ">Download</a>
+    </div>
+
+    <!-- Cloud-Based IDEs -->
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="cloud">
+      <img src="https://img.icons8.com/color/48/000000/replit.png" alt="Replit" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">Replit</h2>
+      <p class="text-gray-600 mb-4">A collaborative browser-based IDE.</p>
+      <a href="https://replit.com/" class="inline-block px-4 py-2 header ">Try Now</a>
+    </div>
+
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="cloud">
+      <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub Codespaces" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">GitHub Codespaces</h2>
+      <p class="text-gray-600 mb-4">Instantly create a cloud-based development environment.</p>
+      <a href="https://github.com/features/codespaces" class="inline-block px-4 py-2 header ">Try Now</a>
+    </div>
+
+    <!-- AI Tool 1 -->
+  </div>
+
+  <div class="header p-8 text-white bg-gradient-blue rounded-lg mb-8">
+      <h2 class="text-3xl font-bold mb-4 text-center">AI Tools</h2>
+    <p class="text-lg text-center  mb-8">Discover powerful AI tools to boost your productivity and creativity.</p>
+  </div>
+    
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="ai">
+      <img src="https://img.icons8.com/color/48/000000/openai.png" alt="OpenAI" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">OpenAI</h2>
+      <p class="text-gray-600 mb-4">A leading AI research organization that provides powerful language models and tools.</p>
+      <a href="https://openai.com/" class="inline-block px-4 py-2 header">Visit Website</a>
+    </div>
+
+    <!-- AI Tool 2 -->
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="ai">
+      <img src="https://img.icons8.com/color/48/000000/google-cloud.png" alt="Google Cloud AI" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">Google Cloud AI</h2>
+      <p class="text-gray-600 mb-4">Offers a suite of machine learning tools and APIs for developers.</p>
+      <a href="https://cloud.google.com/products/ai" class="inline-block px-4 py-2 header">Visit Website</a>
+    </div>
+
+    <!-- AI Tool 3 -->
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="ai">
+      <img src="https://img.icons8.com/color/48/000000/ibm.png" alt="IBM Watson" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">IBM Watson</h2>
+      <p class="text-gray-600 mb-4">A powerful AI platform that provides various AI services and tools.</p>
+      <a href="https://www.ibm.com/watson" class="inline-block px-4 py-2 header">Visit Website</a>
+    </div>
+
+    <!-- AI Tool 4 -->
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="ai">
+      <img src="https://img.icons8.com/color/48/000000/microsoft.png" alt="Microsoft Azure AI" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">Microsoft Azure AI</h2>
+      <p class="text-gray-600 mb-4">Provides a range of AI services and tools for developers and businesses.</p>
+      <a href="https://azure.microsoft.com/en-us/services/cognitive-services/" class="inline-block px-4 py-2 header">Visit Website</a>
+    </div>
+
+    <!-- AI Tool 5 -->
+    <div class="tool-card p-6 bg-white rounded-lg shadow-md" data-category="ai">
+      <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS AI" class="w-12 h-12 mb-4" />
+      <h2 class="text-2xl font-bold mb-2">AWS AI</h2>
+      <p class="text-gray-600 mb-4">Amazon's suite of AI services and machine learning tools for developers.</p>
+      <a href="https://aws.amazon.com/machine-learning/" class="inline-block px-4 py-2 header">Visit Website</a>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-gray-800 text-white mt-8 py-4">
+  <div class="container mx-auto text-center">
+      &copy; 2024 TechLearn. All rights reserved.
+  </div>
+</footer>
+
+  <!-- JavaScript for Filtering -->
+  <script>
+    function filterTools(category) {
+      const tools = document.querySelectorAll('.tool-card');
+      tools.forEach(tool => {
+        if (category === 'all' || tool.getAttribute('data-category') === category) {
+          tool.style.display = 'block';
+        } else {
+          tool.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Resources - Data Structures & Algorithms</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   
+    <style>
+        body {
+            background-color: #f9fafb; /* Light gray background */
+        }
+        .section-bg {
+            background-color: #ffffff; /* White background for sections */
+            border-radius: 0.5rem; /* Rounded corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        .section-title {
+            color: #0284c7; /* Custom blue color for section titles */
+        }
+        .colour_bg
+        {
+            background-color: #0284c7;
+            color: #ffffff;
+        }
+        .footer-bg {
+            background-color: #0284c7; /* Custom blue footer */
+        }
+        .navbar-bg {
+            background-color: #0284c7; /* Custom blue for navbar */
+        }
+        .main-title-bg {
+            /*background-color: #e0f2fe; /* Light blue background for main title */
+            padding: 1rem; /* Padding for the title */
+            border-radius: 0.5rem; /* Rounded corners */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar-bg text-white p-4 shadow-lg fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold flex items-center space-x-3">
+                <div class="rounded-lg">
+                    <img src="img/Crop Ami.co.png" alt="TechLearn Logo" class="w-12 h-12">
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-3xl font-bold leading-none">TechLearn</span>
+                    <span class="text-sm text-blue-200">Your Tech Resource Hub</span>
+                </div>
+            </a>
+            <div class="space-x-8">
+                <a href="index.html" class="hover:text-blue-200 transition-colors">Home</a>
+                <a href="learn.html" class="hover:text-blue-200 transition-colors">Learn Coding</a>
+                <a href="roadmaps.html" class="hover:text-blue-200 transition-colors">Roadmaps</a>
+                <a href="blog.html" class="hover:text-blue-200 transition-colors">Blog</a>
+                <a href="tool.html" class="hover:text-blue-200 transition-colors">Tools</a>
+                <a href="about.html" class="hover:text-blue-200 transition-colors">About</a>
+                <a href="contact.html" class="hover:text-blue-200 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Spacer for Navigation Bar -->
+    <div class="pt-16"></div>
+
+    <div class="container mx-auto p-8">
+        <div class="main-title-bg  mb-6 colour_bg ">
+            <h1 class="text-4xl font-bold text-center ">Data Structures & Algorithms (DSA)</h1>
+            <p class="text-lg text-center  mt-2">DSA is the foundation of efficient problem-solving in computing, involving data organization and algorithmic techniques for optimal performance.</p>
+        </div>
+        
+        <section class="mb-8 section-bg p-6">
+            <h2 class="text-2xl font-semibold mb-2 section-title">Why Learn DSA?</h2>
+            <p class="text-gray-700 mb-4">Learning Data Structures and Algorithms (DSA) is essential for writing efficient and optimized code, solving complex problems, and improving logical thinking. It enhances problem-solving skills, making it easier to tackle real-world challenges in software development. DSA is a key requirement for technical interviews at top companies, as it demonstrates a strong foundation in computer science. Mastering DSA helps in optimizing memory and time complexity, leading to better-performing applications. Whether for competitive programming, software engineering, or system design, understanding DSA is crucial for building scalable and efficient solutions.</p>
+        </section>
+
+        <section class="mb-8 section-bg p-6">
+            <h2 class="text-2xl font-semibold mb-2 section-title">Syllabus for DSA</h2>
+            <h3 class="text-xl font-semibold mb-2">Core Topics</h3>
+            <h4 class="font-semibold">Basic Concepts:</h4>
+            <ul class="list-disc list-inside mb-4">
+                <li>Time Complexity (Big O Notation)</li>
+                <li>Space Complexity</li>
+                <li>Recursion</li>
+            </ul>
+            <h4 class="font-semibold">Data Structures:</h4>
+            <ul class="list-disc list-inside mb-4">
+                <li>Arrays</li>
+                <li>Strings</li>
+                <li>Linked Lists (Singly, Doubly, Circular)</li>
+                <li>Stacks and Queues</li>
+                <li>Hash Tables (Dictionaries)</li>
+                <li>Trees (Binary Trees, Binary Search Trees, AVL Trees)</li>
+                <li>Heaps (Min-Heap, Max-Heap)</li>
+                <li>Graphs (Directed, Undirected, Weighted)</li>
+            </ul>
+            <h4 class="font-semibold">Algorithms:</h4>
+            <ul class="list-disc list-inside mb-4">
+                <li>Sorting Algorithms (Bubble, Selection, Insertion, Merge, Quick, Heap)</li>
+                <li>Searching Algorithms (Linear, Binary)</li>
+                <li>Graph Algorithms (BFS, DFS, Dijkstra's, Prim's, Kruskal's)</li>
+                <li>Dynamic Programming (Fibonacci, Knapsack, Longest Common Subsequence)</li>
+                <li>Greedy Algorithms</li>
+                <li>Backtracking (N-Queens, Sudoku Solver)</li>
+            </ul>
+            <h4 class="font-semibold">Problem-Solving Patterns:</h4>
+            <ul class="list-disc list-inside mb-4">
+                <li>Two Pointers</li>
+                <li>Sliding Window</li>
+                <li>Divide and Conquer</li>
+                <li>Bit Manipulation</li>
+            </ul>
+        </section>
+    </div>
+        <section class="mb-8 section-bg p-6">
+            <h2 class="text-2xl font-semibold mb-2 section-title">Important Topics for Interviews</h2>
+            <ul class="list-disc list-inside mb-4">
+                <li>Arrays and Strings</li>
+                <li>Linked Lists</li>
+                <li>Trees and Graphs</li>
+                <li>Dynamic Programming</li>
+                <li>Sorting and Searching Algorithms</li>
+            </ul>
+        </section>
+
+        <section class="mb-8 section-bg p-6">
+            <h2 class="text-2xl font-semibold mb-2 section-title">Resources for DSA</h2>
+            <h3 class="font-semibold">Books:</h3>
+            <ul class="list-disc list-inside mb-4">
+                <li>Cracking the Coding Interview by Gayle Laakmann McDowell</li>
+                <li>Introduction to Algorithms by Cormen (CLRS)</li>
+            </ul>
+            <h3 class="font-semibold">Courses:</h3>
+            <ul class="list-disc list-inside mb-4">
+                <li>Algorithms by Princeton (Coursera)</li>
+                <li>GeeksforGeeks DSA Course</li>
+            </ul>
+            <h3 class="font-semibold">Practice Platforms:</h3>
+            <ul class="list-disc list-inside mb-4">
+                <li>LeetCode</li>
+                <li>HackerRank</li>
+                <li>Codeforces</li>
+            </ul>
+        </section>
+
+        <!-- New Section for IDE Setup & Best Practices -->
+        <section class="mb-8 section-bg p-6">
+            <h2 class="text-2xl font-semibold mb-2 section-title">IDE Setup & Best Practices</h2>
+            <h3 class="font-semibold">What is an IDE?</h3>
+            <p class="text-gray-700 mb-4">An Integrated Development Environment (IDE) is a software tool that helps you write, debug, and run code efficiently.</p>
+            <h3 class="font-semibold">Step-by-Step IDE Setup</h3>
+            <h4 class="font-semibold">For Python (VS Code)</h4>
+            <ol class="list-decimal list-inside mb-4">
+                <li><strong>Install Python:</strong>
+                    <ul>
+                        <li>Download from <a href="https://www.python.org" class="text-blue-600 hover:underline">python.org</a>.</li>
+                        <li>Check installation: Run <code>python --version</code> in the terminal.</li>
+                    </ul>
+                </li>
+                <li><strong>Install VS Code:</strong>
+                    <ul>
+                        <li>Download from <a href="https://code.visualstudio.com" class="text-blue-600 hover:underline">code.visualstudio.com</a>.</li>
+                    </ul>
+                </li>
+                <li><strong>Install Python Extension:</strong>
+                    <ul>
+                        <li>Open VS Code, go to Extensions (Ctrl+Shift+X), and search for "Python" by Microsoft.</li>
+                    </ul>
+                </li>
+                <li><strong>Set Up a Virtual Environment:</strong>
+                    <ul>
+                        <li>Create a folder for your project.</li>
+                        <li>Open the folder in VS Code.</li>
+                        <li>Run <code>python -m venv venv</code> to create a virtual environment.</li>
+                        <li>Activate it:
+                            <ul>
+                                <li>Windows: <code>venv\Scripts\activate</code></li>
+                                <li>Mac/Linux: <code>source venv/bin/activate</code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+      
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-bg text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">TechLearn</h3>
+                    <p class="text-gray-400">Empowering future tech professionals with quality resources and community support.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="blog.html" class="hover:text-white transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="learn.html" class="hover:text-white transition-colors">Tutorials</a></li>
+                        <li><a href="roadmaps.html" class="hover:text-white transition-colors">Roadmaps</a></li>
+                        <li><a href="tool.html" class="hover:text-white transition-colors">Tools</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

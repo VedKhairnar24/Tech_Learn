@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDE Setup - TechLearn</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f9fafb; /* Light gray background */
+        }
+        .section-bg {
+            background-color: #ffffff; /* White background for sections */
+            border-radius: 0.5rem; /* Rounded corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        .section-title {
+            color: #0284c7; /* Custom blue color for section titles */
+        }
+        .navbar-bg {
+            background-color: #0284c7; /* Updated navbar color */
+        }
+        .footer-bg {
+            background-color: #0284c7; /* Custom blue footer */
+        }
+        .callout {
+            background-color: #e0f2fe; /* Light blue background for callouts */
+            border-left: 4px solid #0284c7; /* Blue left border */
+            padding: 1rem; /* Padding for callouts */
+            margin-bottom: 1rem; /* Space below callouts */
+        }
+        .highlight {
+            background-color: #fffbeb; /* Light yellow background for highlights */
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar-bg text-white p-4 shadow-lg fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold flex items-center space-x-3">
+                <div class="rounded-lg">
+                    <img src="img/Crop Ami.co.png" alt="TechLearn Logo" class="w-12 h-12">
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-3xl font-bold leading-none">TechLearn</span>
+                    <span class="text-sm text-blue-200">Your Tech Resource Hub</span>
+                </div>
+            </a>
+            <div class="space-x-8">
+                <a href="index.html" class="hover:text-blue-200 transition-colors">Home</a>
+                <a href="learn.html" class="hover:text-blue-200 transition-colors">Learn Coding</a>
+                <a href="roadmaps.html" class="hover:text-blue-200 transition-colors">Roadmaps</a>
+                <a href="blog.html" class="hover:text-blue-200 transition-colors">Blog</a>
+                <a href="tool.html" class="hover:text-blue-200 transition-colors">Tools</a>
+                <a href="about.html" class="hover:text-blue-200 transition-colors">About</a>
+                <a href="contact.html" class="hover:text-blue-200 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Spacer for Navigation Bar -->
+    <div class="pt-16"></div>
+
+    <div class="container mx-auto p-8">
+        <h1 class="text-4xl font-bold text-center mb-6">Step-by-Step IDE Setup (VS Code)</h1>
+
+        <section id="install-vscode" class="mb-8 section-bg p-6">
+            <h2 class="text-2xl font-semibold mb-2 section-title"><i class="fas fa-download"></i> 1. Install VS Code</h2>
+            <ul class="list-disc list-inside mb-4">
+                <li>Go to the official <a href="https://code.visualstudio.com" class="text-blue-600 hover:underline">VS Code website</a>.</li>
+                <li>Download the version for your operating system (Windows, macOS, or Linux).</li>
+                <li>Install VS Code by following the installation wizard.</li>
+            </ul>
+            <div class="callout">
+                <strong>Tip:</strong> Make sure to check the system requirements on the website before downloading!
+            </div>
+        </section>
+
+        <hr class="my-6 border-gray-300">
+
+        <section id="install-extensions" class="mb-8 section-bg p-6">
+            <h2 class="text-2xl font-semibold mb-2 section-title"><i class="fas fa-plug"></i> 2. Install Extensions</h2>
+            <p class="mb-4">VS Code extensions enhance functionality for specific languages and tools. Here's how to install them:</p>
+            <ol class="list-decimal list-inside mb-4">
+                <li>Open VS Code.</li>
+                <li>Go to the Extensions Marketplace:
+                    <ul>
+                        <li>Click the Extensions icon in the sidebar (or press <span class="highlight">Ctrl+Shift+X</span>).</li>
+                    </ul>
+                </li>
+                <li>Search for and install the following extensions based on your programming language:</li>
+                <ul class="list-disc list-inside mb-4">
+                    <li><strong>For Python</strong>
+                        <ul>
+                            <li>Python (by Microsoft): Adds Python language support.</li>
+                            <li>Pylance: Provides fast type-checking and IntelliSense.</li>
+                            <li>Black Formatter: Automatically formats Python code.</li>
+                        </ul>
+                    </li>
+                    <li><strong>For JavaScript/Web Development</strong>
+                        <ul>
+                            <li>Live Server: Launches a local development server with live reload.</li>
+                            <li>Prettier: Automatically formats JavaScript, HTML, and CSS.</li>
+                            <li>ESLint: Lints JavaScript code for errors and style issues.</li>
+                        </ul>
+                    </li>
+                    <li><strong>For Java</strong>
+                        <ul>
+                            <li>Extension Pack for Java (by Microsoft): Includes Java language support, debugging, and Maven/Gradle tools.</li>
+                        </ul>
+                    </li>
+                    <li><strong>General Extensions</strong>
+                        <ul>
+                            <li>GitLens: Enhances Git functionality.</li>
+                            <li>Code Runner: Runs code snippets directly in VS Code.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </ol>
+        </section>
+
+        <hr class="my-6 border-gray-300">
+
+        <section id="setup-languages" class="mb-8 section-bg p-6">
+            <h2 class="text-2xl font-semibold mb-2 section-title"><i class="fas fa-code"></i> 3. Set Up for Specific Languages</h2>
+
+            <h6 class="font-semibold mt-4"><i class="fab fa-python"></i> Python Setup</h6>
+            <p>To set up Python, follow these steps:</p>
+            <ol class="list-decimal list-inside mb-4">
+                <li><strong>Install Python:</strong>
+                    <ul>
+                        <li>Download Python from <a href="https://www.python.org" class="text-blue-600 hover:underline">python.org</a>.</li><br>
+                        <li>During installation, check the box to <strong>Add Python to PATH</strong>.</li><br>
+                        <li>Verify installation: Open a terminal and run the following command:
+                            <pre><code class="language-bash">python --version</code></pre>
+                        </li><br>
+                    </ul>
+                </li><br>
+                <li><strong>Create a Virtual Environment:</strong>
+                    <ul>
+                        <li>Open a terminal in VS Code (<code>Ctrl+`</code>).</li><br>
+                        <li>Navigate to your project folder:
+                            <pre><code class="language-bash">cd path/to/your/project</code></pre>
+                        </li><br>
+                        <li>Create a virtual environment:
+                            <pre><code class="language-bash">python -m venv venv</code></pre>
+                        </li><br>
+                        <li>Activate the virtual environment:
+                            <ul>
+                                <li>Windows: <pre><code class="language-bash">venv\Scripts\activate</code></pre></li><br>
+                                <li>macOS/Linux: <pre><code class="language-bash">source venv/bin/activate</code></pre></li><br>
+                            </ul>
+                        </li><br>
+                    </ul>
+                </li><br>
+                <li><strong>Install Packages:</strong>
+                    <pre><code class="language-bash">pip install numpy pandas</code></pre><br>
+                </li><br>
+                <li><strong>Run Python Code:</strong>
+                    <p>Create a file <code>hello.py</code>:</p>
+                    <pre><code class="language-python">print("Hello, World!")</code></pre><br>
+                    <p>Run it:</p>
+                    <pre><code class="language-bash">python hello.py</code></pre><br>
+                </li>
+            </ol>
+            <div class="callout">
+                <strong>Tip:</strong> Make sure to activate your virtual environment before installing packages!
+            </div>
+
+            <hr class="my-6 border-gray-300">
+
+            <h6 class="font-semibold mt-4"><i class="fab fa-node-js"></i> JavaScript/Web Development Setup</h6>
+            <p>To set up JavaScript, follow these steps:</p>
+            <ol class="list-decimal list-inside mb-4">
+                <li><strong>Install Node.js:</strong>
+                    <ul>
+                        <li>Download Node.js from <a href="https://nodejs.org" class="text-blue-600 hover:underline">nodejs.org</a>.</li><br>
+                        <li>Verify installation: Run the following commands:
+                            <pre><code class="language-bash">node --version</code></pre><br>
+                            <pre><code class="language-bash">npm --version</code></pre><br>
+                        </li>
+                    </ul>
+                </li><br>
+                <li><strong>Create a Project:</strong>
+                    <p>Open a terminal in VS Code and initialize a new Node.js project:</p>
+                    <pre><code class="language-bash">npm init -y</code></pre><br>
+                </li><br>
+                <li><strong>Install Packages:</strong>
+                    <pre><code class="language-bash">npm install express</code></pre><br>
+                </li><br>
+                <li><strong>Run JavaScript Code:</strong>
+                    <p>Create a file <code>index.js</code>:</p>
+                    <pre><code class="language-javascript">console.log("Hello, World!");</code></pre><br>
+                    <p>Run it:</p>
+                    <pre><code class="language-bash">node index.js</code></pre><br>
+                </li>
+            </ol>
+            <div class="callout">
+                <strong>Note:</strong> Ensure you have Node.js installed before creating a project!
+            </div>
+
+            <hr class="my-6 border-gray-300">
+
+            <h6 class="font-semibold mt-4"><i class="fab fa-java"></i> Java Setup</h6>
+            <p>To set up Java, follow these steps:</p>
+            <ol class="list-decimal list-inside mb-4">
+                <li><strong>Install Java Development Kit (JDK):</strong>
+                    <ul>
+                        <li>Download the JDK from Oracle or use OpenJDK.</li><br>
+                        <li>Verify installation: Run the following commands:
+                            <pre><code class="language-bash">java --version</code></pre><br>
+                            <pre><code class="language-bash">javac --version</code></pre><br>
+                        </li>
+                    </ul>
+                </li><br>
+                <li><strong>Set Up Java in VS Code:</strong>
+                    <ul>
+                        <li>Install the Extension Pack for Java (as mentioned above).</li><br>
+                        <li>Open a Java file (<code>.java</code>), and VS Code will prompt you to configure the Java Runtime.</li><br>
+                    </ul>
+                </li><br>
+                <li><strong>Run Java Code:</strong>
+                    <p>Create a file <code>HelloWorld.java</code>:</p>
+                    <pre><code class="language-java">public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}</code></pre><br>
+                    <p>Run it by clicking the Run button in VS Code.</p>
+                </li>
+            </ol>
+            <div class="callout">
+                <strong>Reminder:</strong> Ensure you have the JDK installed before running Java code!
+            </div>
+        </section>
+
+        <hr class="my-6 border-gray-300">
+
+        <section id="configure-settings" class="mb-8 section-bg p-6">
+            <h2 class="text-2xl font-semibold mb-2 section-title"><i class="fas fa-cog"></i> 4. Configure Settings (Optional)</h2>
+            <ul class="list-disc list-inside mb-4">
+                <li><strong>Format on Save:</strong>
+                    <ul>
+                        <li>Go to File > Preferences > Settings (or press <span class="highlight">Ctrl+,</span>).</li>
+                        <li>Search for "Format On Save" and enable it.</li>
+                    </ul>
+                </li>
+                <li><strong>Change Theme:</strong>
+                    <ul>
+                        <li>Go to the Extensions Marketplace and search for themes like One Dark Pro or Material Theme.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <hr class="my-6 border-gray-300">
+
+        <section id="debugging" class="mb-8 section-bg p-6">
+            <h2 class="text-2xl font-semibold mb-2 section-title"><i class="fas fa-bug"></i> 5. Debugging</h2>
+            <ul class="list-disc list-inside mb-4">
+                <li><strong>Set Breakpoints:</strong> Click to the left of the line numbers to set breakpoints.</li>
+                <li><strong>Run Debugger:</strong> Press <span class="highlight">F5</span> to start debugging.</li>
+                <li>Use the Debug sidebar to inspect variables and step through code.</li>
+            </ul>
+        </section>
+
+        <hr class="my-6 border-gray-300">
+
+        <section id="version-control" class="mb-8 section-bg p-6">
+            <h2 class="text-2xl font-semibold mb-2 section-title"><i class="fas fa-code-branch"></i> 6. Version Control with Git</h2>
+            <ol class="list-decimal list-inside mb-4">
+                <li><strong>Install Git:</strong>
+                    <ul>
+                        <li>Download Git from <a href="https://git-scm.com" class="text-blue-600 hover:underline">git-scm.com</a>.</li>
+                        <li>Verify installation: Run <code>git --version</code>.</li>
+                    </ul>
+                </li>
+                <li><strong>Initialize a Git Repository:</strong>
+                    <ul>
+                        <li>Open a terminal in your project folder:
+                            <pre><code>git init</code></pre>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Commit Changes:</strong>
+                    <ul>
+                        <li>Stage files:
+                            <pre><code>git add .</code></pre>
+                        </li>
+                        <li>Commit changes:
+                            <pre><code>git commit -m "Initial commit"</code></pre>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Connect to GitHub:</strong>
+                    <ul>
+                        <li>Create a repository on GitHub.</li>
+                        <li>Link your local repository:
+                            <pre><code>git remote add origin https://github.com/your-username/your-repo.git</code></pre>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Push changes:</strong>
+                    <pre><code>git push -u origin main</code></pre>
+                </li>
+            </ol>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-white mt-8 py-4">
+        <div class="container mx-auto text-center">
+            &copy; 2024 TechLearn. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html> 

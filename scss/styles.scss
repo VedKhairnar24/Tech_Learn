@@ -1,0 +1,38 @@
+// Custom SCSS variables
+$primary-color: #2563eb; // blue-600
+
+// Custom components
+.custom-card {
+    @apply bg-white rounded-lg shadow-md p-6;
+    border: 2px solid $primary-color;
+
+    &:hover {
+        @apply shadow-lg;
+        transform: translateY(-2px);
+    }
+}
+
+// Additional custom styles
+.btn-primary {
+    @apply bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors;
+}
+
+.section-title {
+    @apply text-3xl font-bold mb-4;
+}
+
+// Animations
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-out;
+} 

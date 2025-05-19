@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #f9fafb; /* Light gray background */
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .category-filter:hover {
+            background-color: #dbeafe;
+            transition: background-color 0.2s ease;
+        }
+        .nav-bar {
+            background-color: #0284c7; /* Custom blue color for the navbar */
+            padding: 1rem 0; /* Padding for the navbar */
+        }
+        .nav-link {
+            color: white;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation Bar -->
+       <!-- Header -->
+       <nav class="nav-bar bg-gradient-to-r from-primary-600 to-primary-700 text-white p-4 shadow-lg fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold flex items-center space-x-3">
+                <div class="rounded-lg">
+                    <img src="img/Crop Ami.co.png" alt="TechLearn Logo" class="w-12 h-12" />
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-2xl font-bold leading-none">TechLearn</span>
+                    <span class="text-xs text-primary-200">Your Tech Resource Hub</span>
+                </div>
+            </a>
+            <div class="space-x-6 nav-bar">
+                <a href="index.html" class="hover:text-blue-200 transition-colors">Home</a>
+                <a href="learn.html" class="hover:text-blue-200 transition-colors">Learn Coding</a>
+                <a href="roadmaps.html" class="hover:text-blue-200 transition-colors">Roadmaps</a>
+                <a href="blog.html" class="hover:text-blue-200 transition-colors">Blog</a>
+                <a href="tool.html" class="hover:text-blue-200 transition-colors">Tools</a>
+                <a href="about.html" class="hover:text-blue-200 transition-colors">About</a>
+                <a href="contact.html" class="hover:text-blue-200 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <section class="py-24"> <!-- Added margin-top for navbar -->
+        <div class="container mx-auto px-4">
+            <!-- Header with Search -->
+            <div class="mb-12">
+                <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 md:mb-0">Tech Insights 2025</h1>
+                    <div class="relative w-full md:w-64">
+                        <input id="searchInput" type="text" placeholder="Search articles..." 
+                            class="w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:border-gray-500">
+                        <svg class="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Category Filters -->
+                <div class="flex flex-wrap gap-2 justify-center mb-8">
+                    <button class="category-filter px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium" data-category="all">All</button>
+                    <button class="category-filter px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium" data-category="AI">AI</button>
+                    <button class="category-filter px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium" data-category="Web Dev">Web Dev</button>
+                    <button class="category-filter px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium" data-category="Cybersecurity">Cybersecurity</button>
+                    <button class="category-filter px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium" data-category="Cloud">Cloud</button>
+                </div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="blogGrid">
+                <!-- Blog Card 1 -->
+       
+                <!-- Blog Card 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover" data-category="Quantum Computing">
+                    <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg" alt="Quantum Computing Breakthroughs" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Quantum</span>
+                            <span class="text-sm text-gray-500">7 min read</span>
+                        </div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-3">Quantum Computing Breakthroughs</h2>
+                        <p class="text-gray-600 mb-4 line-clamp-3">A look into the latest advancements in quantum computing technology.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">March 1, 2025</span>
+                            <button class="text-gray-700 hover:text-gray-900 font-medium read-more" data-id="2">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover" data-category="Cybersecurity">
+                    <img src="https://images.unsplash.com/photo-1562813733-b31f71025d54" alt="Cybersecurity Threats on the Rise" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">Cybersecurity</span>
+                            <span class="text-sm text-gray-500">6 min read</span>
+                        </div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-3">Cybersecurity Threats on the Rise</h2>
+                        <p class="text-gray-600 mb-4 line-clamp-3">An overview of the increasing cybersecurity threats and how to combat them.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">March 1, 2025</span>
+                            <button class="text-gray-700 hover:text-gray-900 font-medium read-more" data-id="3">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 4 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover" data-category="VR">
+                    <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg" alt="Metaverse and Virtual Reality (VR) Developments" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">VR</span>
+                            <span class="text-sm text-gray-500">5 min read</span>
+                        </div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-3">Metaverse and Virtual Reality (VR) Developments</h2>
+                        <p class="text-gray-600 mb-4 line-clamp-3">Exploring the latest trends in the metaverse and VR technologies.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">March 1, 2025</span>
+                            <button class="text-gray-700 hover:text-gray-900 font-medium read-more" data-id="4">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 5 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover" data-category="Green Tech">
+                    <img src="https://images.unsplash.com/photo-1487611459768-bd414656ea10" alt="Green Tech and Sustainable Computing" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Green Tech</span>
+                            <span class="text-sm text-gray-500">6 min read</span>
+                        </div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-3">Green Tech and Sustainable Computing</h2>
+                        <p class="text-gray-600 mb-4 line-clamp-3">Innovations in green technology and their impact on sustainable computing.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">March 1, 2025</span>
+                            <button class="text-gray-700 hover:text-gray-900 font-medium read-more" data-id="5">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 6 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover" data-category="Programming">
+                    <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg" alt="Programming Language Trends" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Programming</span>
+                            <span class="text-sm text-gray-500">5 min read</span>
+                        </div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-3">Programming Language Trends</h2>
+                        <p class="text-gray-600 mb-4 line-clamp-3">A look at the latest trends in programming languages and their applications.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">March 1, 2025</span>
+                            <button class="text-gray-700 hover:text-gray-900 font-medium read-more" data-id="6">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 7 -->
+                
+
+                <!-- Blog Card 8 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover" data-category="Open Source">
+                    <img src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg" alt="Open Source Contributions" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Open Source</span>
+                            <span class="text-sm text-gray-500">5 min read</span>
+                        </div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-3">Open Source Contributions</h2>
+                        <p class="text-gray-600 mb-4 line-clamp-3">The importance of open source contributions in the tech community.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">March 1, 2025</span>
+                            <button class="text-gray-700 hover:text-gray-900 font-medium read-more" data-id="8">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 9 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover" data-category="Cloud Computing">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa" alt="Cloud Computing Innovations" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Cloud</span>
+                            <span class="text-sm text-gray-500">6 min read</span>
+                        </div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-3">Cloud Computing Innovations</h2>
+                        <p class="text-gray-600 mb-4 line-clamp-3">Latest innovations in cloud computing and their impact on businesses.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">March 1, 2025</span>
+                            <button class="text-gray-700 hover:text-gray-900 font-medium read-more" data-id="9">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 10 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover" data-category="Job Market">
+                    <img src="https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg" alt="Tech Job Market Trends" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Jobs</span>
+                            <span class="text-sm text-gray-500">5 min read</span>
+                        </div>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-3">Tech Job Market Trends</h2>
+                        <p class="text-gray-600 mb-4 line-clamp-3">Analyzing the trends in the tech job market and what to expect in the future.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">March 1, 2025</span>
+                            <button class="text-gray-700 hover:text-gray-900 font-medium read-more" data-id="10">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button id="loadMore" class="bg-gray-800 text-white px-8 py-3 rounded-full hover:bg-gray-700 transition-colors font-medium">
+                    Load More Articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // Extended blog posts data
+        const blogPosts = [
+        {
+            "id": 11,
+            "category": "AI",
+            "title": "Generative AI Takes Over Creative Industries",
+            "description": "Generative AI tools like MidJourney and DALL-E are transforming creative industries, from art to music.",
+            "date": "January 15, 2024",
+            "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995",
+            "readTime": "6 min read"
+        },
+        {
+            "id": 12,
+            "category": "Blockchain",
+            "title": "Blockchain Beyond Cryptocurrency",
+            "description": "Blockchain technology is being adopted in supply chain management, healthcare, and voting systems.",
+            "date": "February 10, 2024",
+            "image": "https://images.pexels.com/photos/730564/pexels-photo-730564.jpeg",
+            "readTime": "7 min read"
+        },
+        {
+            "id": 13,
+            "category": "IoT",
+            "title": "The Rise of Smart Cities",
+            "description": "IoT devices are powering smart cities, improving energy efficiency, traffic management, and public safety.",
+            "date": "March 5, 2024",
+            "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
+            "readTime": "6 min read"
+        },
+        {
+            "id": 14,
+            "category": "Robotics",
+            "title": "Robots in Healthcare",
+            "description": "Robots are assisting in surgeries, patient care, and even mental health therapy.",
+            "date": "April 20, 2024",
+            "image": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg",
+            "readTime": "5 min read"
+        },
+        {
+            "id": 15,
+            "category": "AR",
+            "title": "Augmented Reality in Education",
+            "description": "AR is revolutionizing education by making learning more interactive and engaging.",
+            "date": "May 12, 2024",
+            "image": "https://images.unsplash.com/photo-1614332287897-cdc485fa562d",
+            "readTime": "5 min read"
+        },
+        {
+            "id": 16,
+            "category": "Space Tech",
+            "title": "Private Space Exploration Booms",
+            "description": "Companies like SpaceX and Blue Origin are making space travel more accessible.",
+            "date": "June 8, 2024",
+            "image": "https://images.pexels.com/photos/355925/pexels-photo-355925.jpeg",
+            "readTime": "7 min read"
+        },
+        {
+            "id": 17,
+            "category": "Edge Computing",
+            "title": "Edge Computing Gains Traction",
+            "description": "Edge computing is reducing latency and improving real-time data processing for IoT devices.",
+            "date": "July 3, 2024",
+            "image": "https://images.unsplash.com/photo-1599658880436-c61792e70672",
+            "readTime": "6 min read"
+        },
+        {
+            "id": 18,
+            "category": "Biotech",
+            "title": "CRISPR and Gene Editing Breakthroughs",
+            "description": "CRISPR technology is advancing, with potential cures for genetic diseases on the horizon.",
+            "date": "August 18, 2024",
+            "image": "https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg",
+            "readTime": "6 min read"
+        },
+        {
+            "id": 19,
+            "category": "Fintech",
+            "title": "Digital Currencies Go Mainstream",
+            "description": "Central banks worldwide are exploring digital currencies to modernize financial systems.",
+            "date": "September 22, 2024",
+            "image": "https://images.unsplash.com/photo-1622630998477-20aa696ec148",
+            "readTime": "5 min read"
+        },
+        {
+            "id": 20,
+            "category": "AI Ethics",
+            "title": "The Ethics of AI in Decision-Making",
+            "description": "As AI becomes more prevalent, ethical concerns around bias and transparency are growing.",
+            "date": "October 30, 2024",
+            "image": "https://images.pexels.com/photos/8386426/pexels-photo-8386426.jpeg",
+            "readTime": "6 min read"
+        }
+        ];
+
+        // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const cards = document.querySelectorAll('#blogGrid > div');
+            cards.forEach(card => {
+                const title = card.querySelector('h2').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+                card.style.display = (title.includes(searchTerm) || description.includes(searchTerm)) ? '' : 'none';
+            });
+        });
+
+        // Category filter functionality
+        document.querySelectorAll('.category-filter').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const category = e.target.dataset.category;
+                const cards = document.querySelectorAll('#blogGrid > div');
+                cards.forEach(card => {
+                    const cardCategory = card.dataset.category;
+                    card.style.display = (category === 'all' || cardCategory === category) ? '' : 'none';
+                });
+                // Highlight active filter
+                document.querySelectorAll('.category-filter').forEach(btn => btn.classList.remove('bg-blue-200'));
+                e.target.classList.add('bg-blue-200');
+            });
+        });
+
+        // Read More functionality
+        document.querySelectorAll('.read-more').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const postId = e.target.dataset.id;
+                console.log(`Loading full article for post ID: ${postId}`);
+                // Add your redirect logic here
+            });
+        });
+
+        // Load More functionality
+        document.getElementById('loadMore').addEventListener('click', () => {
+            const blogGrid = document.getElementById('blogGrid');
+            blogPosts.forEach(post => {
+                const blogCard = `
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover" data-category="${post.category}">
+                        <img src="${post.image}" alt="${post.title}" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">${post.category}</span>
+                                <span class="text-sm text-gray-500">${post.readTime}</span>
+                            </div>
+                            <h2 class="text-xl font-semibold text-gray-800 mb-3">${post.title}</h2>
+                            <p class="text-gray-600 mb-4 line-clamp-3">${post.description}</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-gray-500">${post.date}</span>
+                                <button class="text-gray-700 hover:text-gray-900 font-medium read-more" data-id="${post.id}">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                blogGrid.insertAdjacentHTML('beforeend', blogCard);
+            });
+        });
+    </script>
+</body>
+</html> 

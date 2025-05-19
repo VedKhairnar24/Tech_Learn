@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechLearn - Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #f9fafb; /* Light gray background */
+        }
+        .section-bg {
+            background-color: #ffffff; /* White background for sections */
+            border-radius: 0.5rem; /* Rounded corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        .section-title {
+            color: #0284c7; /* Custom blue color for section titles */
+        }
+        .navbar-bg {
+            background-color: #0284c7; /* Updated navbar color */
+        }
+        .footer-bg {
+            background-color: #0284c7; /* Custom blue footer */
+        }
+        .callout {
+            background-color: #e0f2fe; /* Light blue background for callouts */
+            border-left: 4px solid #0284c7; /* Blue left border */
+            padding: 1rem; /* Padding for callouts */
+            margin-bottom: 1rem; /* Space below callouts */
+        }
+        .highlight {
+            background-color: #fffbeb; /* Light yellow background for highlights */
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.25rem;
+        }
+   
+        .section-title h2 {
+            color: #0284c7; /* Blue for section title */
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .title-underline {
+            width: 60px;
+            height: 3px;
+            background-color: #0284c7; /* Blue underline */
+            margin: 0 auto 2rem auto;
+        }
+        .contact-form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #374151; /* Dark gray */
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db; /* Light gray border */
+            border-radius: 4px;
+            font-size: 1rem;
+            color: #374151; /* Dark gray */
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .submit-btn {
+            background-color: #0284c7; /* Blue button */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #0369a1; /* Darker blue on hover */
+        }
+        .contact-info {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .info-item i {
+            font-size: 1.5rem;
+            color: #0284c7; /* Blue icon */
+        }
+        .info-item h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #374151; /* Dark gray */
+        }
+        .info-item p {
+            font-size: 1rem;
+            color: #6b7280; /* Gray */
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation Bar -->
+    <nav class="navbar-bg text-white p-4 shadow-lg fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold flex items-center space-x-3">
+                <div class="rounded-lg">
+                    <img src="img/Crop Ami.co.png" alt="TechLearn Logo" class="w-12 h-12">
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-3xl font-bold leading-none">TechLearn</span>
+                    <span class="text-sm text-blue-200">Your Tech Resource Hub</span>
+                </div>
+            </a>
+            <div class="space-x-8">
+                <a href="index.html" class="hover:text-blue-200 transition-colors">Home</a>
+                <a href="learn.html" class="hover:text-blue-200 transition-colors">Learn Coding</a>
+                <a href="roadmaps.html" class="hover:text-blue-200 transition-colors">Roadmaps</a>
+                <a href="blog.html" class="hover:text-blue-200 transition-colors">Blog</a>
+                <a href="tool.html" class="hover:text-blue-200 transition-colors">Tools</a>
+                <a href="about.html" class="hover:text-blue-200 transition-colors">About</a>
+                <a href="contact.html" class="hover:text-blue-200 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-24  pt-24 ">
+        <div class="container mx-auto px-4">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="contact-container grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Contact Form -->
+                <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="59fd12c3-d950-4e00-af56-03a1b5dddfcc">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Enter subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Type your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>vedkhairnar4@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 7972606935</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Aurangabad, Maharashtra, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white mt-8 py-4">
+        <div class="container mx-auto text-center">
+            &copy; 2024 TechLearn. All rights reserved.
+        </div>
+      </footer>
+
+
+    <script src="/js/script.js"></script>
+</body>
+</html> 
