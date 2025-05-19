@@ -20,7 +20,7 @@ TechLearn is a modern, responsive web platform designed to empower aspiring engi
 - **JavaScript** (for interactivity and animations)
 
 ## Getting Started
-snaketn1544
+
 1. **Clone the repository** or download the source files.
 2. Ensure your project structure matches:
     ```
